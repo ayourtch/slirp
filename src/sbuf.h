@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 1995 Danny Gasparovski.
- * 
- * Please read the file COPYRIGHT for the 
+ *
+ * Please read the file COPYRIGHT for the
  * terms and conditions of the copyright.
  */
 
@@ -20,5 +20,11 @@ struct sbuf {
 				 * byte should be read from the sbuf */
 	char	*sb_data;	/* Actual data */
 };
+
+void sbfree(struct sbuf *);
+void sbdrop(struct sbuf *, int);
+void sbreserve(struct sbuf *, int);
+void sbappend(struct socket *, struct mbuf *);
+void sbcopy(struct sbuf *, int, int, char *);
 
 #endif
