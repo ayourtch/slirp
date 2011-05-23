@@ -216,7 +216,7 @@ openpty(amaster, aslave)
 {
 	register int master, slave;
 
-#ifdef HAVE_GRANTPT
+#ifdef HAVE_STROPTS_H
 	char *ptr;
 	
 	if ((master = open("/dev/ptmx", O_RDWR)) < 0 ||
