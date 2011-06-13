@@ -9,7 +9,7 @@
 #ifdef FULL_BOLT
 #define WANT_SYS_IOCTL_H
 #endif
-#include <slirp.h>
+#include "slirp.h"
 
 struct ttys *ttys_unit[MAX_INTERFACES];
 

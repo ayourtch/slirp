@@ -5,7 +5,7 @@
 
 version = @version@
 srcdir = @srcdir@
-COMMON_DEFS = @DASH_POSIX@ -I. -I${srcdir} @USE_PPP@ #-DDEBUG
+COMMON_DEFS = @DASH_POSIX@ -I${srcdir} @USE_PPP@ #-DDEBUG
 CC = @CC@
 CPP = @CPP@ $(COMMON_DEFS) -DUSE_PPP @CFLAGS@
 CFLAGS = $(COMMON_DEFS) @CFLAGS@ @CFLAGS2@
@@ -96,7 +96,7 @@ release: all
 #
 
 .c.p:
-	$(CPROTO) -I. -o $@ $<
+	$(CPROTO) -o $@ $<
 
 
 auth.o: $(COMMON_H) ${srcdir}/ppp/auth.c
