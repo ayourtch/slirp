@@ -43,11 +43,11 @@
  * $Id: bsd-comp.c,v 1.1.1.2 2001/11/05 21:02:45 strredwolf Exp $
  */
 
-#include <slirp.h>
+#include "../slirp.h"
 
 #define M_INC_COMP 4096	/* XXXXX */
 
-#include <ppp/ppp-comp.h>
+#include "ppp-comp.h"
 
 #if DO_BSD_COMPRESS
 /*

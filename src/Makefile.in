@@ -5,7 +5,7 @@
 
 version = @version@
 srcdir = @srcdir@
-COMMON_DEFS = @DASH_POSIX@ -I${srcdir} @USE_PPP@ #-DDEBUG
+COMMON_DEFS = @DASH_POSIX@ @USE_PPP@ #-DDEBUG
 CC = @CC@
 CPP = @CPP@ $(COMMON_DEFS) -DUSE_PPP @CFLAGS@
 CFLAGS = $(COMMON_DEFS) @CFLAGS@ @CFLAGS2@

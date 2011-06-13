@@ -30,7 +30,7 @@ static char rcsid[] = "$Id: ccp.c,v 1.1.1.2 2001/11/05 21:02:46 strredwolf Exp $
 #endif
 
 #include <syslog.h>
-#include <slirp.h>
+#include "../slirp.h"
 #include "ppp-comp.h"
 
 #include "pppd.h"

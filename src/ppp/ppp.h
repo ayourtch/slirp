@@ -24,7 +24,7 @@
  * Modified for use with SLiRP by Juha Pirkola  8-May-1995
  */
 
-#include <slirp.h>
+#include "../slirp.h"
 
 #ifndef __PPP_H__
 #define __PPP_H__

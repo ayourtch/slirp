@@ -32,7 +32,7 @@
  *
  */
 
-#include <config.h>
+#include "config.h"
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
@@ -63,7 +63,7 @@
 #include "ppp/pppd.h"
 #include "ppp/pathnames.h"
 
-#include <slirp.h>
+#include "slirp.h"
 
 #include "ppp/ppp-comp.h"
 #include "ppp/bsd-comp.h"
