@@ -96,7 +96,7 @@ release: all
 #
 
 .c.p:
-	$(CPROTO) -o $@ $<
+	$(CPROTO) -D USE_PPP -i -o $@ $<
 
 
 auth.o: $(COMMON_H) ${srcdir}/ppp/auth.c
