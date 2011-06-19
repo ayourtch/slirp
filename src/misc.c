@@ -7,6 +7,15 @@
 
 #define WANT_SYS_IOCTL_H
 #include "slirp.h"
+#include "socket.h"
+#include "misc.h"
+#include "main.h"
+#include "options.h"
+#include "debug.h"
+#include "ttys.h"
+#include "tcp.h"
+#include "ip.h"
+#include "misc.p"
 
 u_int curtime, time_fasttimo, last_slowtimo, detach_time;
 u_int detach_wait = 600000;	/* 10 minutes */

@@ -7,6 +7,8 @@
 
 #ifndef _MISC_H_
 #define _MISC_H_
+#include "socket.h"
+int show_x(char *buff, struct socket *inso);
 
 struct ex_list {
 	int ex_pty;			/* Do we want a pty? */

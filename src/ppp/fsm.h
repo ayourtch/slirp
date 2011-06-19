@@ -1,3 +1,5 @@
+#ifndef FSM_H
+#define FSM_H
 /*
  * fsm.h - {Link, IP} Control Protocol Finite State Machine definitions.
  *
@@ -126,3 +128,4 @@ void fsm_sdata __P((fsm *, int, int, u_char *, int));
  * Variables
  */
 extern int peer_mru[];		/* currently negotiated peer MRU (per unit) */
+#endif

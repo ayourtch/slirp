@@ -5,6 +5,8 @@
  * terms and conditions of the copyright.
  */
 
+#include "if.h"
+
 #ifdef sc_flags
 #undef sc_flags
 #endif

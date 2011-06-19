@@ -32,8 +32,11 @@ static char rcsid[] = "$Id: chap.c,v 1.1.1.2 2001/11/05 21:02:46 strredwolf Exp 
 #include <sys/time.h>
 #include <syslog.h>
 
+#include "ppp.h"
 #include "pppd.h"
 #include "chap.h"
+#include "../config.h"
+#include "ppp_defs.h"
 #include "md5.h"
 
 chap_state chap[NUM_PPP];		/* CHAP state; one for each unit */

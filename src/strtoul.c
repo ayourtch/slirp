@@ -36,6 +36,7 @@
 static char *rcsid = "$Id: strtoul.c,v 1.1.1.2 2001/11/05 21:02:41 strredwolf Exp $";
 #endif /* LIBC_SCCS and not lint */
 
+#include "strtoul.p"
 #include "slirp.h"
 unsigned long strtoul _P((const char *, char **, int));
 #undef _P	/* used by <ctype.h> */

@@ -7,6 +7,7 @@
 
 #ifndef _IF_H_
 #define _IF_H_
+#include "slirp.h"
 
 #define IF_COMPRESS	0x01	/* We want compression */
 #define IF_NOCOMPRESS	0x02	/* Do not do compression */

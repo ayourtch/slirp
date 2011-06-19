@@ -35,6 +35,8 @@
  */
 
 #include "slirp.h"
+#include "mbuf.h"
+#include "cksum.p"
 
 /*
  * Checksum routine for Internet Protocol family headers (Portable Version).

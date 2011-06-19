@@ -37,6 +37,7 @@
 #ifndef _TCP_H_
 #define _TCP_H_
 
+#include "slirp.h"
 typedef	u_int32_t	tcp_seq;
 
 #define      PR_SLOWHZ       2               /* 2 slow timeouts per second (approx) */
@@ -77,7 +78,6 @@ struct tcphdr {
 	u_int16_t	th_urp;			/* urgent pointer */
 };
 
-#include "tcp_var.h"
 
 #define	TCPOPT_EOL		0
 #define	TCPOPT_NOP		1

@@ -42,6 +42,8 @@ static char rcsid[] = "$Id: auth.c,v 1.1.1.2 2001/11/05 21:02:45 strredwolf Exp 
 #include <syslog.h>
 #include <pwd.h>
 #include <string.h>
+#include "../slirp.h"
+#include "pppd.h"
 #include <sys/types.h>
 #include <sys/stat.h>
 
@@ -53,13 +55,11 @@ static char rcsid[] = "$Id: auth.c,v 1.1.1.2 2001/11/05 21:02:45 strredwolf Exp 
 #endif
 #endif
 
-#include "pppd.h"
-#include "fsm.h"
+#include "../main.h"
+#include "ppp.h"
 #include "lcp.h"
+#include "ppp_defs.h"
 #include "upap.h"
-#include "chap.h"
-#include "ipcp.h"
-#include "ccp.h"
 #include "pathnames.h"
 
 #if defined(sun) && defined(sparc)

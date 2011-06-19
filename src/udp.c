@@ -42,7 +42,14 @@
  * terms and conditions of the copyright.
  */
 
+#include "mbuf.h"
+#include "socket.h"
+#include "udp.h"
 #include "slirp.h"
+#include "debug.h"
+#include "main.h"
+#include "misc.h"
+#include "udp.p"
 #include "ip_icmp.h"
 
 struct udpstat udpstat;

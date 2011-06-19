@@ -36,6 +36,7 @@
 
 #ifndef _IP_H_
 #define _IP_H_
+#include "slirp.h"
 
 #ifdef WORDS_BIGENDIAN
 # ifndef NTOHL

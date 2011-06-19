@@ -15,3 +15,5 @@ extern struct mbuf if_fastq;
 extern struct mbuf if_batchq;
 extern int if_queued, if_thresh;
 
+void sl_input(struct ttys *ttyp, u_char *if_bptr, int if_n);
+int sl_encap(char *inbptr, struct mbuf *m, int unit, int sl_esc, int proto);

@@ -31,8 +31,11 @@ static char rcsid[] = "$Id: upap.c,v 1.1.1.2 2001/11/05 21:02:50 strredwolf Exp 
 #include <sys/time.h>
 #include <syslog.h>
 
+#include "ppp.h"
 #include "pppd.h"
 #include "upap.h"
+#include "../config.h"
+#include "ppp_defs.h"
 
 
 upap_state upap[NUM_PPP];		/* UPAP state; one for each unit */

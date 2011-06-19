@@ -32,8 +32,11 @@ static char rcsid[] = "$Id: fsm.c,v 1.1.1.2 2001/11/05 21:02:46 strredwolf Exp $
 #include <sys/types.h>
 #include <syslog.h>
 
+#include "ppp.h"
 #include "pppd.h"
 #include "fsm.h"
+#include "../config.h"
+#include "ppp_defs.h"
 
 extern char *proto_name();
 

@@ -5,7 +5,12 @@
  * terms and conditions of the copyright.
  */
 
+#include "debug.h"
 #include "slirp.h"
+#include "sbuf.h"
+#include "mbuf.h"
+#include "socket.h"
+#include "sbuf.p"
 
 /* Done as a macro in socket.h */
 /* int

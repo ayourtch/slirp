@@ -36,6 +36,7 @@
 
 #ifndef _UDP_H_
 #define _UDP_H_
+#include "ip.h"
 
 #define UDP_TTL 0x60
 #define UDP_UDPDATALEN 16192

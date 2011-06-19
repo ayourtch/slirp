@@ -36,6 +36,7 @@
 
 #ifndef _MBUF_H_
 #define _MBUF_H_
+#include "ip.h"
 
 #define m_freem m_free
 

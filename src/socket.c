@@ -8,7 +8,18 @@
 #define WANT_SYS_IOCTL_H
 #include "slirp.h"
 #include "ip_icmp.h"
+#include "mbuf.h"
+#include "socket.h"
+#include "misc.h"
+#include "tcp.h"
+#include "udp.h"
+#include "sbuf.h"
+#include "debug.h"
+#include "tcp_var.h"
+#include "if.h"
 #include "main.h"
+#include "ctl.h"
+#include "socket.p"
 
 void
 so_init()

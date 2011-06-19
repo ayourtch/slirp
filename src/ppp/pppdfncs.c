@@ -36,16 +36,15 @@ static char rcsid[] = "$Id: pppdfncs.c,v 1.1.1.2 2001/11/05 21:02:50 strredwolf 
 #include <sys/resource.h>
 #include <sys/stat.h>
 
+#include "../config.h"
+#include "ppp.h"
 #include "pppd.h"
-#include "magic.h"
-#include "fsm.h"
+#include "ppp_defs.h"
 #include "lcp.h"
 #include "ipcp.h"
 #include "upap.h"
 #include "chap.h"
 #include "ccp.h"
-#include "pathnames.h"
-#include "patchlevel.h"
 
 #undef ifs_next
 

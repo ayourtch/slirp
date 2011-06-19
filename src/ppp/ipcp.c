@@ -30,9 +30,11 @@ static char rcsid[] = "$Id: ipcp.c,v 1.1.1.2 2001/11/05 21:02:47 strredwolf Exp 
 #include <syslog.h>
 #include <sys/types.h>
 
+#include "ppp.h"
 #include "pppd.h"
-#include "fsm.h"
 #include "ipcp.h"
+#include "../config.h"
+#include "ppp_defs.h"
 #include "pathnames.h"
 
 /* global vars */

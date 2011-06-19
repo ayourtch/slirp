@@ -5,7 +5,14 @@
  * terms and conditions of the copyright.
  */
 
+#include "debug.h"
 #include "slirp.h"
+#include "mbuf.h"
+#include "sl.h"
+#include "ttys.h"
+#include "ip.h"
+#include "slcompress.h"
+#include "sl.p"
 
 /* 
  * NOTE: FRAME_END means in_pkt = 0. Any other byte while in_pkt = 0

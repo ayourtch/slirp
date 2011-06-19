@@ -19,6 +19,8 @@
  * $Id: lcp.h,v 1.1.1.2 2001/11/05 21:02:47 strredwolf Exp $
  */
 
+#include "fsm.h"
+
 /*
  * Options.
  */

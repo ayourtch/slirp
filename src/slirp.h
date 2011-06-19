@@ -1,7 +1,6 @@
 #ifndef __COMMON_H__
 #define __COMMON_H__
 
-#include "version.h"
 #include "config.h"
 
 #include <sys/types.h>
@@ -143,9 +142,6 @@ int inet_aton _P((const char *cp, struct in_addr *ia));
 # include <sys/filio.h>
 #endif
 
-#ifdef USE_PPP
-#include "ppp/slirppp.h"
-#endif
 
 #ifdef __STDC__
 #include <stdarg.h>
@@ -164,31 +160,6 @@ int inet_aton _P((const char *cp, struct in_addr *ia));
 #include <sys/stropts.h>
 #endif
 
-#include "debug.h"
-
-#include "ip.h"
-#include "tcp.h"
-#include "tcp_timer.h"
-#include "tcp_var.h"
-#include "tcpip.h"
-#include "udp.h"
-#include "icmp_var.h"
-#include "terminal.h"
-#include "mbuf.h"
-#include "sbuf.h"
-#include "socket.h"
-#include "if.h"
-#include "slcompress.h"
-#include "main.h"
-#include "misc.h"
-#include "options.h"
-#include "ctl.h"
-#include "sl.h"
-#ifdef USE_PPP
-#include "ppp/pppd.h"
-#include "ppp/ppp.h"
-#endif
-#include "ttys.h"
 
 extern struct ttys *ttys_unit[MAX_INTERFACES];
 
@@ -257,30 +228,6 @@ extern int do_echo;
 
 #define DEFAULT_BAUD 115200
 
-#include "cksum.p"
-#include "debug.p"
-#include "if.p"
-#include "ip_input.p"
-#include "ip_output.p"
-#include "main.p"
-#include "mbuf.p"
-#include "misc.p"
-#include "options.p"
-#ifdef USE_PPP
-#include "ppp.p"
-#endif
-#include "sbuf.p"
-#include "sl.p"
-#include "slcompress.p"
-#include "socket.p"
-#include "tcp_input.p"
-#include "tcp_output.p"
-#include "tcp_subr.p"
-#include "tcp_timer.p"
-#include "terminal.p"
-#include "ttys.p"
-#include "udp.p"
-#include "ip_icmp.p"
 
 #ifdef USE_PPP
 #define MIN_MRU MINMRU

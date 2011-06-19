@@ -42,6 +42,12 @@
  * terms and conditions of the copyright.
  */
 
+#include "tcp_var.h"
+#include "debug.h"
+#include "socket.h"
+#include "mbuf.h"
+#include "if.h"
+#include "tcp_output.p"
 #include "slirp.h"
 
 #define max(x,y) ((x) > (y) ? (x) : (y))

@@ -32,13 +32,13 @@ static char rcsid[] = "$Id: lcp.c,v 1.1.1.2 2001/11/05 21:02:47 strredwolf Exp $
 #include <sys/types.h>
 #include <sys/time.h>
 
+#include "ppp.h"
 #include "pppd.h"
 #include "fsm.h"
+#include "../config.h"
 #include "lcp.h"
-#include "magic.h"
+#include "ppp_defs.h"
 #include "chap.h"
-#include "upap.h"
-#include "ipcp.h"
 
 /* global vars */
 fsm lcp_fsm[NUM_PPP];			/* LCP fsm structure (global)*/

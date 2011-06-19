@@ -30,12 +30,14 @@ static char rcsid[] = "$Id: ccp.c,v 1.1.1.2 2001/11/05 21:02:46 strredwolf Exp $
 #endif
 
 #include <syslog.h>
+#include "pppd.h"
 #include "../slirp.h"
 #include "ppp-comp.h"
 
-#include "pppd.h"
+#include "ppp.h"
 #include "fsm.h"
 #include "ccp.h"
+#include "ppp_defs.h"
 
 fsm ccp_fsm[NUM_PPP];
 ccp_options ccp_wantoptions[NUM_PPP];	/* what to request the peer to use */

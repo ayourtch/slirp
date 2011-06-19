@@ -25,8 +25,6 @@ static char rcsid[] = "$Id: magic.c,v 1.1.1.2 2001/11/05 21:02:48 strredwolf Exp
 #include <sys/types.h>
 #include <sys/time.h>
 
-#include "pppd.h"
-#include "magic.h"
 
 static u_int32_t next;		/* Next value to return */
 

@@ -38,6 +38,8 @@
  * slcompress.h,v 1.5 1994/08/22 14:16:36 bde Exp
  */
 
+#include "ip.h"
+
 #ifndef _NET_SLCOMPRESS_H_
 #define _NET_SLCOMPRESS_H_
 

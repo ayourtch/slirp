@@ -8,6 +8,8 @@
 #define PRN_STDERR	1
 #define PRN_SPRINTF	2
 
+#include "slirp.h"
+
 extern FILE *dfd;
 extern FILE *lfd;
 extern int dostats;
@@ -35,3 +37,4 @@ extern int slirp_debug;
 #define DEBUG_ERROR(x)
 
 #endif
+void slirp_exit(int exit_status);

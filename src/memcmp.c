@@ -1,3 +1,4 @@
+#include "memcmp.p"
 
 int
 memcmp(a, b, len)

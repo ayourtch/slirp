@@ -36,6 +36,14 @@
 
 #include "slirp.h"
 #include "ip_icmp.h"
+#include "ip.h"
+#include "mbuf.h"
+#include "icmp_var.h"
+#include "main.h"
+#include "ctl.h"
+#include "debug.h"
+#include "socket.h"
+#include "ip_icmp.p"
 
 struct icmpstat icmpstat;
 

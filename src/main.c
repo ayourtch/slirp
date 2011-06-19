@@ -8,8 +8,21 @@
 
 #define WANT_SYS_IOCTL_H
 #define WANT_TERMIOS_H
+#include "ppp/pppd.h"
 #include "slirp.h"
 #include "main.h"
+#include "ttys.h"
+#include "misc.h"
+#include "version.h"
+#include "options.h"
+#include "debug.h"
+#include "ctl.h"
+#include "debug.h"
+#include "socket.h"
+#include "ip.h"
+#include "tcp_var.h"
+#include "udp.h"
+#include "main.p"
 
 struct timeval tt;
 struct ex_list *exec_list = NULL;

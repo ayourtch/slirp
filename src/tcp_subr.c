@@ -43,6 +43,16 @@
  */
 
 #define WANT_SYS_IOCTL_H
+#include "tcp_var.h"
+#include "mbuf.h"
+#include "socket.h"
+#include "if.h"
+#include "main.h"
+#include "ctl.h"
+#include "debug.h"
+#include "misc.h"
+#include "options.h"
+#include "tcp_subr.p"
 #include "slirp.h"
 
 /* patchable/settable parameters for tcp */

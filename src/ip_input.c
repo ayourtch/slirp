@@ -44,6 +44,11 @@
 
 #include "slirp.h"
 #include "ip_icmp.h"
+#include "ip.h"
+#include "main.h"
+#include "debug.h"
+#include "mbuf.h"
+#include "ip_input.p"
 
 int ip_defttl;
 struct ipstat ipstat;

@@ -6,7 +6,21 @@
  * terms and conditions of the copyright.
  */
 
+#include "debug.h"
 #include "slirp.h"
+#include "version.h"
+#include "ttys.h"
+#include "main.h"
+#include "ip.h"
+#include "slcompress.h"
+#include "tcp_var.h"
+#include "udp.h"
+#include "icmp_var.h"
+#include "mbuf.h"
+#include "socket.h"
+#include "tcp.h"
+#include "misc.h"
+#include "debug.p"
 
 FILE *dfd = NULL;
 #ifdef DEBUG

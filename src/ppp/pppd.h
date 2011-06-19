@@ -26,13 +26,11 @@
 #ifndef __PPPD_H__
 #define __PPPD_H__
 
-#include "ppp.h"
 
 #define NUM_PPP	MAX_PPP_INTERFACES
 
 #include <sys/param.h>		/* for MAXPATHLEN and BSD4_4, if defined */
 #include <sys/types.h>		/* for u_int32_t, if defined */
-#include "ppp_defs.h"
 
 /*
  * Limits.

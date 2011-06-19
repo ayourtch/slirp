@@ -12,6 +12,8 @@
  * to use slirp over rsh or whatever.  A tty/pty is not necessary.
  */
 
+#include "ttys.h"
+#include "terminal.p"
 #include "slirp.h"
 
 void

@@ -34,6 +34,11 @@
  * tcp_timer.c,v 1.2 1994/08/02 07:49:10 davidg Exp
  */
 
+#include "debug.h"
+#include "tcp_timer.h"
+#include "tcp_var.h"
+#include "socket.h"
+#include "tcp_timer.p"
 #include "slirp.h"
 
 #define max(x,y) ((x) > (y) ? (x) : (y))

@@ -6,6 +6,14 @@
  */
 
 #include "slirp.h"
+#include "mbuf.h"
+#include "if.h"
+#include "slcompress.h"
+#include "ttys.h"
+#include "debug.h"
+#include "main.h"
+#include "socket.h"
+#include "if.p"
 
 int if_mtu, if_mru;
 int if_comp;

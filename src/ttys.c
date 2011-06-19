@@ -9,7 +9,16 @@
 #ifdef FULL_BOLT
 #define WANT_SYS_IOCTL_H
 #endif
+#include "debug.h"
+#include "ttys.h"
+#include "main.h"
+#include "sl.h"
+#include "misc.h"
+#include "ttys.p"
 #include "slirp.h"
+#ifdef USE_PPP
+#include "ppp/pppd.h"
+#endif
 
 struct ttys *ttys_unit[MAX_INTERFACES];
 

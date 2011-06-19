@@ -47,7 +47,6 @@
 
 #define M_INC_COMP 4096	/* XXXXX */
 
-#include "ppp-comp.h"
 
 #if DO_BSD_COMPRESS
 /*
@@ -90,7 +89,6 @@ static int	bsd_decompress __P((void *state, struct mbuf *cmp,
 static void	bsd_reset __P((void *state));
 static void	bsd_comp_stats __P((void *state, struct compstat *stats));
 
-#include "bsd-comp.h"
 
 /*
  * the next two codes should not be changed lightly, as they must not

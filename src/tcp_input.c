@@ -43,7 +43,18 @@
  */
 
 #include "slirp.h"
+#include "mbuf.h"
+#include "tcp.h"
+#include "tcpip.h"
+#include "tcp_var.h"
+#include "socket.h"
+#include "debug.h"
+#include "main.h"
+#include "ctl.h"
+#include "misc.h"
 #include "ip_icmp.h"
+#include "if.h"
+#include "tcp_input.p"
 
 struct socket tcb;
 

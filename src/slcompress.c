@@ -44,6 +44,11 @@
  */
 
 #include "slirp.h"
+#include "slcompress.h"
+#include "ip.h"
+#include "mbuf.h"
+#include "tcp.h"
+#include "slcompress.p"
 
 struct slcompress comp_s;
 

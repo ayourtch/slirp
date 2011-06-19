@@ -32,7 +32,6 @@
  *
  */
 
-#include "config.h"
 #include <stdio.h>
 #include <string.h>
 #include <errno.h>
@@ -53,20 +52,25 @@
 #endif
 
 #include "ppp/ppp.h"
-#include "ppp/magic.h"
-#include "ppp/fsm.h"
+#include "ppp/pppd.h"
 #include "ppp/lcp.h"
 #include "ppp/ipcp.h"
-#include "ppp/upap.h"
-#include "ppp/chap.h"
 
-#include "ppp/pppd.h"
-#include "ppp/pathnames.h"
 
+#include "debug.h"
 #include "slirp.h"
+#include "ppp/slirppp.h"
+#include "ppp/ppp_defs.h"
+#include "ttys.h"
+#include "if.h"
+#include "mbuf.h"
 
 #include "ppp/ppp-comp.h"
-#include "ppp/bsd-comp.h"
+#include "slcompress.h"
+#include "ip.h"
+#include "main.h"
+#include "ctl.h"
+#include "ppp.p"
 
 extern struct compressor ppp_bsd_compress;
 

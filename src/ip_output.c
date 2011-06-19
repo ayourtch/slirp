@@ -42,7 +42,13 @@
  * terms and conditions of the copyright.
  */
 
+#include "debug.h"
 #include "slirp.h"
+#include "socket.h"
+#include "ip.h"
+#include "if.h"
+#include "mbuf.h"
+#include "ip_output.p"
 
 u_int16_t ip_id;
 

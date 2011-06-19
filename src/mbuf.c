@@ -16,6 +16,10 @@
  */
 
 #include "slirp.h"
+#include "mbuf.h"
+#include "if.h"
+#include "debug.h"
+#include "mbuf.p"
 
 struct	mbuf *mbutl;
 char	*mclrefcnt;

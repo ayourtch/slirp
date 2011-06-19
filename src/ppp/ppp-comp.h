@@ -29,6 +29,8 @@
 
 #ifndef _NET_PPP_COMP_H
 #define _NET_PPP_COMP_H
+#include "../mbuf.h"
+#include "ppp_defs.h"
 
 /*
  * The following symbols control whether we include code for

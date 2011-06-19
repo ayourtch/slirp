@@ -5,20 +5,30 @@
  * terms and conditions of the copyright.
  */
 
+#include "tcp_var.h"
 #include "slirp.h"
+#include "debug.h"
+#include "socket.h"
+#include "options.h"
+#include "ctl.h"
+#include "ttys.h"
+#include "misc.h"
+#include "main.h"
+#include "udp.h"
+#include "tcp.h"
+#include "tcp_timer.h"
+#include "version.h"
+#include "options.p"
 
 #ifdef USE_PPP
-#include "ppp/ppp.h"
 #include "ppp/pppd.h"
-#include "ppp/pathnames.h"
-#include "ppp/patchlevel.h"
-#include "ppp/fsm.h"
 #include "ppp/lcp.h"
 #include "ppp/ipcp.h"
 #include "ppp/upap.h"
 #include "ppp/chap.h"
 #include "ppp/ccp.h"
 #include "ppp/ppp-comp.h"
+#include "ppp/slirppp.h"
 
 #define FALSE	0
 #define TRUE	1
